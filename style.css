@@ -1,0 +1,76 @@
+html{
+	background-color:rgb(255, 255, 255);
+	background-size:cover;
+	text-transform:capitalize;
+	font-family:calibri;
+	font-size:  20px;
+	font-style:italic;
+}
+.centro {
+	text-align:center;
+}
+.sinistra {
+	text-align:left;
+}
+h1 {
+	color:gold;
+	text-transform: capitalize;
+}
+h2 {
+	color:gold;
+	text-transform: capitalize;
+	
+}
+h3 {
+	color:rgb(0, 0, 0);
+}
+a{
+	text-decoration:none;
+	font-family:Arial;
+}
+nav.menu {
+	margin-top:15px;
+	padding-top:15px;
+	text-align:center;
+}
+nav.menu a {
+	border:1 px dashedgrey;
+	padding:5px;
+	margin-right:10px;
+}
+a:link{
+	color:rgb(9, 9, 9);
+}
+a:hover{
+	color:gold;
+}
+.colore {
+	background-color:darkgoldenrod ;
+	font-size:120%;
+}
+p {
+	color:rgb(0, 0, 0);
+}
+.destra {
+	text-align:right;
+}
+img {
+	border:5px solid rgb(0, 0, 0) ;
+}
+.boh{
+	padding: 20px 10px;
+	float: left;
+	width: 46%;
+	
+}
+.aboh{
+	float: left;
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+.bordi{
+	border: 2px solid rgb(255, 255, 255);
+}
+
+

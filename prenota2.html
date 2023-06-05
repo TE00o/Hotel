@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <nav class="menu">
+        <a href="hotel2.html">HOME</a>
+        <a href="posizione2.html">POSITIONG</a>
+        <a href="camere2.html">ROOM</a>
+        <a href="info2.html">INFO</a>
+    </nav>
+    <title>hotel pelosi | Book now</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<header>Book now</header>
+<body>
+    <form id="registra">
+        <fieldset>
+        <legend>Registration</legend>
+        <legend>Name</legend>
+        <label for="nome"></label>
+        <input type="text" id="nome" required>
+        <legend>Surname</legend>
+        <label for="cognome"></label>
+        <input type="text" id="cognome" required>
+        <legend>Email</legend>
+        <label for="email"></label>
+        <input type="email" id="email" required>
+        <legend>Password</legend>
+        <label for="password"></label>
+        <input type="password" id="password" required>
+        <legend>Confirm Password</legend>
+        <label for="confermaPassword"></label>
+        <input type="password" id="confermaPassword" required>
+        <legend>Date</legend>
+        <label for="data"></label>
+        <input type="date" id="data" required>
+        <legend>Adults</legend>
+        <label for="persone"></label>
+        <input type="number" id="persone" min="1" required>
+        <legend>Children</legend>
+        <label for="bambini"></label>
+        <input type="number" id="bambini" min="0" required>
+        <legend>Nights</legend>
+        <label for="notti"></label>
+        <input type="number" id="notti" min="1" required>
+        
+        <input type="submit" value="Register">
+    </fieldset>
+    </form>
+            <script>
+                   document.getElementById("registra").addEventListener("submit", function(event)) {
+                    event.preventDefault();
+    
+            var nome = document.getElementById("nome").value;
+            var cognome = document.getElementById("cognome").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var confermaPassword = document.getElementById("confermaPassword").value;
+            var data = document.getElementById("data").value;
+            var persone = document.getElementById("persone").value;
+            var bambini = document.getElementById("bambini").value;
+            var notti = document.getElementById("notti").value;
+    
+    if (nome === "" || cognome === "" || email === "" || password === "" || confermaPassword === "" || data === "" || persone === "" || bambini === "" || notti === "") {
+        alert("Please fill in all fields.");
+    }else {
+        alert("registration success!");
+    }
+    if(password!==confermaPassword){
+        alert("the password are not equals ");
+    } else{
+        alert("registration success!");
+    }
+}
+            </script>
+        </fieldset>
+    </form>
+</body>
+</html>
